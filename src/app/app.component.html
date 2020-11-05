@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Timer APP</h3>
+      <button
+        type="button"
+        class="btn active btn-md btn-primary"
+        (click)="startTimer()"
+      >
+        Start Timer
+      </button>
+      <button
+        p-r-5
+        type="button"
+        class="btn active btn-md btn-primary"
+        (click)="pauseTimer()"
+      >
+        Pause Timer
+      </button>
+      <p>{{ timeLeft }} Seconds</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Count the Clicks</h3>
+      <button
+        type="button"
+        class="btn active btn-md btn-primary"
+        (click)="counter()"
+      >
+        Counter
+      </button>
+      <p>{{ count }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Addition of Numbers</h3>
+      <input id="Text1" type="text" />
+      <br />
+      <br />
+      <input id="Text2" type="text" />
+      <br />
+      <br />
+      <button type="button" class="btn btn-primary" (click)="AddNumbers()">
+        Add
+      </button>
+      <p>{{ sum }}</p>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
